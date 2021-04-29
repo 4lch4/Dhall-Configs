@@ -7,8 +7,8 @@ let KoaConfig: Type = {
   -- The display name of the API/web service.
   name: Text,
 
-  -- A relatively short, and optional, description of what the API is for.
-  description: Optional Text,
+  -- A relatively short description of what the API is for.
+  description: Text,
 
   -- The current version of the API/web service.
   version: Text,
@@ -20,9 +20,8 @@ let KoaConfig: Type = {
   apiPrefix: Text,
 
   -- Serves as a simple form of authentication, all requests must contain this
-  -- value in the url or headers. If nothing is provided, then the API has no
-  -- auth for any of the routes/endpoints.
-  requestToken: Optional Text
+  -- value in the url or headers.
+  requestToken: Text
 }
 
 in KoaConfig
